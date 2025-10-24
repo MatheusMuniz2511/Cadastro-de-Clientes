@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Cliente</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 30px;
+        }
+        h1 {
+            background-color: #00b8b8;
+            color: white;
+            padding: 10px;
+        }
+        form {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 650px;
+        }
+        fieldset {
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+        legend {
+            font-weight: bold;
+            color: #00b8b8;
+        }
+        label {
+            display: inline-block;
+            width: 150px;
+            margin-top: 5px;
+        }
+        input, select, textarea {
+            margin-top: 5px;
+        }
+        textarea {
+            width: 100%;
+            height: 70px;
+        }
+        .botoes {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Cadastro de Cliente</h1>
+
+<form action="#" method="post">
+    <p>Preencha os campos abaixo para registrar seu interesse nos serviços da nossa empresa.</p>
+
+    <fieldset>
+        <legend>Informações Pessoais</legend>
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="exemplo@email.com" required><br>
+
+        <label for="senha">Crie uma Senha:</label>
+        <input type="password" id="senha" name="senha" required><br>
+
+        <label for="nascimento">Data de Nascimento:</label>
+        <input type="date" id="nascimento" name="nascimento">
+    </fieldset>
+
+    <fieldset>
+        <legend>Contato e Localização</legend>
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(00)0000-0000"><br>
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade"><br>
+
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado">
+            <option value="">Selecione...</option>
+            <option>AC</option>
+<option>AL</option>
+<option>AP</option>
+<option>AM</option>
+<option>BA</option>
+<option>CE</option>
+<option>DF</option>
+<option>ES</option>
+<option>GO</option>
+<option>MA</option>
+<option>MT</option>
+<option>MS</option>
+<option>MG</option>
+<option>PA</option>
+<option>PB</option>
+<option>PR</option>
+<option>PE</option>
+<option>PI</option>
+<option>RJ</option>
+<option>RN</option>
+<option>RS</option>
+<option>RO</option>
+<option>RR</option>
+<option>SC</option>
+<option>SP</option>
+<option>SE</option>
+<option>TO</option>
+
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>Preferências de Serviço</legend>
+        <label>Deseja receber novidades por e-mail?</label><br>
+        <input type="radio" id="sim" name="novidades" value="Sim">
+        <label for="sim">Sim</label>
+        <input type="radio" id="nao" name="novidades" value="Não">
+        <label for="nao">Não</label><br><br>
+
+        <label>Selecione os serviços de interesse:</label><br>
+        <input type="checkbox" id="dev" name="servicos" value="Desenvolvimento Web">
+        <label for="dev">Desenvolvimento Web</label><br>
+
+        <input type="checkbox" id="design" name="servicos" value="Design Digital">
+        <label for="design">Design Digital</label><br>
+
+        <input type="checkbox" id="redes" name="servicos" value="Redes de Computadores">
+        <label for="redes">Redes de Computadores</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Comentários</legend>
+        <label for="mensagem">Digite uma mensagem (opcional):</label><br>
+        <textarea id="mensagem" name="mensagem" placeholder="Digite suas observações..."></textarea>
+    </fieldset>
+
+    <div class="botoes">
+        <input type="submit" value="Enviar Cadastro">
+        <input type="reset" value="Limpar">
+    </div>
+</form>
+
+</body>
+</html>
